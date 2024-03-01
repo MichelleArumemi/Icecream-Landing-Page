@@ -1,0 +1,151 @@
+body {
+    background-color: #F7A9A8;
+}
+
+.container {
+    text-align: left;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left; /* Align text to the left */
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 150px; /* Reset to original value */
+    line-height: 1.5;
+}
+
+.logo {
+    position: absolute;
+    width: 295px;
+    height: 103px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.opensans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    font-variation-settings: "wdth" 100;
+}
+
+.cta {
+    padding: 0;
+    margin: 0 0 0 40px;
+    background-color: #E5C3D1;
+    height: 50px;
+    width: 190px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    display: flex; /* Center the content horizontally */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+.opensans2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    font-variation-settings: "wdth" 100;
+    font-size: 30px;
+    color: #ec0679;
+}
+
+/* Add a class for the line */
+.image-line {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: 826px;
+    top: 604px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+/* Define keyframes for the underline animation */
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.flavor {
+    text-align: center; /* Align the text to the center */
+    margin-top: -200px; /* Move the "Popular Picks" section further up */
+}
+
+.images {
+    text-align: center; /* Align the text to the center */
+    color: #ec0679;
+    margin-top: 10px; /* Adjust margin to center it vertically */
+}
+
+
+.flavor::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust vertical position */
+    left: 50%; /* Start from the center */
+    width: 0; /* Initially no width */
+    height: 2px;
+    background-color: black; /* Set initial color */
+    transition: width 0.3s ease, left 0.3s ease; /* Transition width and left properties */
+}
+
+.flavor:hover::after {
+    width: 35%; /* Expand width to 35% on hover */
+    left: 32.5%; /* Align the underline to start from the center and move to the right */
+}
+
+.images {
+    text-align: right; /* Align the text to the right */
+    color: #ec0679;
+    margin-top: -20px; /* Move it upwards */
+}
+
+.image-wrapper {
+    position: relative; /* Add relative positioning to the wrapper */
+    display: inline-block; /* Ensure images are displayed in a row */
+    margin-left: 20px; /* Adjust margin between images */
+    margin-right: 0; /* Remove right margin */
+    overflow: hidden; /* Hide overflow for rounded border effect */
+    align-items: center;
+    transition: transform 0.3s ease; /* Add transition for smooth movement */
+}
+
+.image-wrapper h4 {
+    font-family: "Pacifico", cursive;
+}
+
+.image-wrapper img {
+    border-radius: 20px; /* Add rounded corners to the images */
+}
+
+.image-wrapper:not(:last-child) {
+    margin-right: 10px; /* Adjust margin between images except for the last one */
+}
+
+.image-wrapper:not(:last-child)::after { /* Apply to all images except the last one */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px; /* Adjust the position of the vertical line */
+    height: 100%;
+    width: 2px; /* Width of the vertical line */
+    background-color: white; /* Color of the vertical line */
+}
+
+.image-wrapper:hover {
+    transform: translateY(-5px); /* Move the image up by 5 pixels on hover */
+}
