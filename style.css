@@ -1,5 +1,5 @@
 body {
-    background-color: #F7A9A8;
+    background-color: #FFD1DC; /* Strawberry Swirl */
     height: 100vh; /* Set the height of the body to the viewport height */
     overflow: hidden; /* Hide overflow to prevent scrolling */
 }
@@ -13,7 +13,7 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: left; /* Align text to the left */
-    color: #ffffff;
+    color: #5C3317; /* Rich Chocolate */
     font-size: 18px;
     margin-top: 150px; /* Reset to original value */
     line-height: 1.5;
@@ -34,12 +34,13 @@ body {
     font-weight: 300;
     font-style: light;
     font-variation-settings: "wdth" 100;
+    color: #000000; /* Ice Cream Cone */
 }
 
 .cta {
     padding: 0;
     margin: 0 0 0 40px;
-    background-color: #E5C3D1;
+    background-color: #FFF29A; /* Blueberry Sorbet */
     height: 50px;
     width: 190px;
     border-radius: 15px;
@@ -57,7 +58,7 @@ body {
     font-style: bold;
     font-variation-settings: "wdth" 100;
     font-size: 30px;
-    color: #ec0679;
+    color: #5C3317; /* Rich Chocolate */
 }
 
 /* Add a class for the line */
@@ -67,7 +68,7 @@ body {
     height: 0px;
     left: 826px;
     top: 604px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #B2F5EA; /* Mint Chocolate Chip */
     transform: rotate(90deg);
 }
 
@@ -88,7 +89,7 @@ body {
 
 .images {
     text-align: center; /* Align the text to the center */
-    color: #ec0679;
+    color: #FFD1DC; /* Strawberry Swirl */
     margin-top: 10px; /* Adjust margin to center it vertically */
 }
 
@@ -102,14 +103,11 @@ body {
 }
 
 .images .image-wrapper h4 {
-    font-family: "Pacifico", cursive;
+    font-family: "Pacifico",cursive;
     margin-top: 5px; /* Adjust the margin-top to move the ice cream names up */
+    color: #5C3317; /* Rich Chocolate */
 }
 
 .images .image-wrapper img {
     border-radius: 20px; /* Add rounded corners to the images */
-}
-
-.images .image-wrapper:hover {
-    transform: translateY(-5px); /* Move the image up by 5 pixels on hover */
 }
